@@ -1,23 +1,3 @@
-/*
-import React from 'react';
-import { useState } from 'react';
-import { View, ScrollView, SafeAreaView } from 'react-native';
-import { Stack, useRouter } from 'expo-router';
-
-import { COLORS, icons, images, SIZES } from '../constants';
-
-
-const Home = () => {
-    return (
-       <View>
-            <Text>Home</Text>
-       </View>
-    )
-}
-
-export default Home;
-*/
-
 import React from "react";
 import {
   View,
@@ -26,28 +6,49 @@ import {
   StyleSheet,
   TouchableOpacity,
 } from "react-native";
+import { useRouter } from "expo-router"; // Import useRouter from expo-router
 
 const App = () => {
+  const router = useRouter(); // Initialize useRouter
+
   return (
     <View style={styles.container}>
       <View style={styles.sidebar}>
         <Text style={styles.logo}>Zananna</Text>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/")}
+        >
           <Text style={styles.sidebarButtonText}>Home</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/gamehub")}
+        >
           <Text style={styles.sidebarButtonText}>Gamehub</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/chat")}
+        >
           <Text style={styles.sidebarButtonText}>Chat</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/host")}
+        >
           <Text style={styles.sidebarButtonText}>Host</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/about")}
+        >
           <Text style={styles.sidebarButtonText}>About</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButton}>
+        <TouchableOpacity
+          style={styles.sidebarButton}
+          onPress={() => router.push("/settings")}
+        >
           <Text style={styles.sidebarButtonText}>Settings</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.sidebarButtonSignIn}>
