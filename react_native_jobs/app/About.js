@@ -12,7 +12,7 @@ const Home = () => {
       <View style={{ paddingLeft: 100, margin: 10 }}>
         <View style={styles.box}>
           <Text style={{ fontSize: 57.5, color: "white", fontWeight: "bold" }}>
-            Change the game for your gatherings
+            Change the game for your gatherings 
           </Text>
           <Text style={{ fontSize: 25, color: "white", paddingTop: 20 }}>
             ZANNANA IS HERE TO MAKE HOSTING AND JOINING GAME NIGHTS A LOT

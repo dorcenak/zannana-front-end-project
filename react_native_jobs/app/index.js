@@ -14,7 +14,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.sidebar}>
-        <Text style={styles.logo}>Zananna</Text>
+        <Text style={styles.logo}>Zannana</Text>
         <TouchableOpacity
           style={styles.sidebarButton}
           onPress={() => router.push("/")}
