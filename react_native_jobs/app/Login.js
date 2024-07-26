@@ -1,56 +1,67 @@
-import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import React from "react";
+import "./Login_page.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGoogle,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import diceImage from "./loginpage_dice.jpg";
 
-const Login = () => {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        keyboardType="email-address"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        secureTextEntry
-      />
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Submit</Text>
-      </TouchableOpacity>
-    </View>
+    <div className="Login">
+      <div className="login-container">
+        <div className="login-left">
+          <img src={diceImage} alt="Login" />
+        </div>
+        <div className="login-right">
+          <div className="login-header">
+            <h2>LOG IN</h2>
+            <div className="social-login">
+              <a href="#" className="social-btn">
+                <FontAwesomeIcon icon={faFacebook} size="2x" />
+              </a>
+              <a href="#" className="social-btn">
+                <FontAwesomeIcon icon={faGoogle} size="2x" />
+              </a>
+              <a href="#" className="social-btn">
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a href="#" className="social-btn">
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+            </div>
+            <p>or, continue with your email</p>
+          </div>
+          <form>
+            <div className="form-group">
+              <label htmlFor="username">Email/Username</label>
+              <input type="text" id="username" name="username" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div className="form-group">
+              <input type="checkbox" id="rememberMe" />
+              <label htmlFor="rememberMe">Remember me</label>
+              <a href="#" className="forgot-password">
+                Forgot Password?
+              </a>
+            </div>
+            <button type="submit" className="login-btn">
+              LOG IN
+            </button>
+          </form>
+          <p>
+            Need an account? <a href="#">Sign up here</a>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-  },
-  input: {
-    width: '100%',
-    padding: 15,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    marginBottom: 15,
-  },
-  button: {
-    backgroundColor: '#D32F2F',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-});
-
-export default Login;
+export default App;
