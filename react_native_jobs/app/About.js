@@ -24,22 +24,61 @@ const Home = () => {
           At Zannana, we envision a world where tabletop gaming transcends
           boundaries, bringing people together and igniting imaginations.
         </Text>
-        <Text style={styles.content}>
+        <Text style={styles.content2}>
           Through our dedication to fostering a thriving gaming community and
           providing excpetional products and experiences, we strive to make
           every visit to Zannana an unforgettable jounrey into the world of
           tabletop gaming.
         </Text>
         <View style={styles.box2}>
-          <View style={styles.mission}>
-            <Text style={styles.vision}>Our mission</Text>
-            <Text style={styles.content}>
+          <View style={styles.missionbox}>
+            <Text style={styles.ourmission}>Our mission</Text>
+            <Text style={styles.missionContent}>
               Zannana was created specifically for tabletop game lovers, by
               tabletop game lovers. Our purpose is to make it easier to host and
               join tabletop game events near you, in addition to trading,
               buying, and selling your tabletop games.
             </Text>
           </View>
+        </View>
+        <View>
+          <Text style={styles.tenets}>The Five Tenets of Zannana</Text>
+          <Text style={styles.tenetContent}>
+            <Text style={{ fontWeight: "bold" }}>
+              Inclusivity and Diversity:
+            </Text>{" "}
+            Ensure events are welcoming to diverse backgrounds, genders, ages,
+            and abilities, fostering an inclusive environment where everyone
+            feels valued and respected, regardless of their gaming expertise.
+          </Text>
+          <Text style={styles.tenetContent}>
+            <Text style={{ fontWeight: "bold" }}>
+              Quality Gaming Experience:
+            </Text>{" "}
+            Prioritize well-organized events with clear rules, offering a
+            variety of games for different interests and skill levels. Maintain
+            high standards for gaming materials and facilities.
+          </Text>
+          <Text style={styles.tenetContent}>
+            <Text style={{ fontWeight: "bold" }}>Community Building:</Text>{" "}
+            Focus on building a strong gaming community through social
+            interaction, tournaments, and events. Foster friendships and
+            connections among players.
+          </Text>
+          <Text style={styles.tenetContent}>
+            <Text style={{ fontWeight: "bold" }}>Continuous Improvement:</Text>{" "}
+            Solicit feedback and adapt to preferences, staying updated on gaming
+            trends. Proactively incorporate new games and formats.
+          </Text>
+          <Text style={styles.tenetContent}>
+            <Text style={{ fontWeight: "bold" }}>
+              Accessibility and Affordability:
+            </Text>{" "}
+            Strive for affordability and flexibility in participation. Consider
+            venue location, transportation, and scheduling for accessibility.
+            Provide resources for newcomers to learn and enjoy gaming without
+            intimidation.
+          </Text>
         </View>
       </View>
     </ScrollView>
@@ -52,26 +91,26 @@ const styles = StyleSheet.create({
   box: {
     height: 450,
     width: 1050,
-    backgroundColor: "red",
+    backgroundColor: "#D32F2F",
     paddingTop: 100,
     paddingLeft: 85,
     paddingRight: 350,
     borderRadius: 10,
   },
   vision: {
-    paddingTop: 15,
+    paddingTop: 50,
     fontSize: 35,
-    color: "red",
+    color: "#D32F2F",
     paddingBottom: 20,
-    paddingLeft: 10,
+    paddingLeft: 225,
   },
-  content: {
+  missionContent: {
     fontSize: 20,
     paddingLeft: 10,
     paddingBottom: 25,
     alignContent: "center",
   },
-  mission: {
+  missionbox: {
     height: 250,
     width: 475,
     backgroundColor: "white",
@@ -83,10 +122,40 @@ const styles = StyleSheet.create({
   box2: {
     height: 450,
     width: 1050,
-    backgroundColor: "red",
+    backgroundColor: "#D32F2F",
     paddingTop: 100,
     paddingLeft: 40,
     paddingRight: 350,
     borderRadius: 10,
+  },
+  content: {
+    fontSize: 20,
+    paddingHorizontal: 225,
+    paddingBottom: 25,
+    alignContent: "center",
+  },
+  ourmission: {
+    paddingTop: 15,
+    fontSize: 35,
+    color: "#D32F2F",
+    paddingBottom: 20,
+    paddingLeft: 10,
+  },
+  content2: {
+    fontSize: 20,
+    paddingHorizontal: 225,
+    paddingBottom: 50,
+    alignContent: "center",
+  },
+  tenets: {
+    fontSize: 35,
+    paddingTop: 60,
+    paddingLeft: 50,
+    paddingBottom: 45,
+  },
+  tenetContent: {
+    fontSize: 20,
+    paddingTop: 50,
+    paddingHorizontal: 235,
   },
 });
