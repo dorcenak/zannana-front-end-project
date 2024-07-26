@@ -53,7 +53,7 @@ const App = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.sidebarButtonSignIn}
-          onPress={() => router.push("/login")} // Add navigation to Login.js
+          onPress={() => router.push("/Login")} // Add navigation to Login.js
         >
           <Text style={styles.sidebarButtonText}>Sign In</Text>
         </TouchableOpacity>
@@ -69,7 +69,7 @@ const App = () => {
           </Text>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => router.push("/login")} // Add navigation to Login.js
+            onPress={() => router.push("/Login")} // Add navigation to Login.js
           >
             <Text style={styles.buttonText}>LOGIN</Text>
           </TouchableOpacity>
