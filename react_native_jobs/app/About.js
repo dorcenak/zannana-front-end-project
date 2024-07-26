@@ -12,7 +12,7 @@ const Home = () => {
       <View style={{ paddingLeft: 100, margin: 10 }}>
         <View style={styles.box}>
           <Text style={{ fontSize: 57.5, color: "white", fontWeight: "bold" }}>
-            Change the game for your gatherings 
+            Change the game for your gatherings
           </Text>
           <Text style={{ fontSize: 25, color: "white", paddingTop: 20 }}>
             ZANNANA IS HERE TO MAKE HOSTING AND JOINING GAME NIGHTS A LOT
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   box: {
     height: 450,
     width: 1050,
-    backgroundColor: "grey",
+    backgroundColor: "red",
     paddingTop: 100,
     paddingLeft: 85,
     paddingRight: 350,
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   content: {
     fontSize: 20,
-    paddingLeft: 10,    
+    paddingLeft: 10,
     paddingBottom: 25,
     alignContent: "center",
   },
@@ -83,10 +83,10 @@ const styles = StyleSheet.create({
   box2: {
     height: 450,
     width: 1050,
-    backgroundColor: "grey",
+    backgroundColor: "red",
     paddingTop: 100,
     paddingLeft: 40,
     paddingRight: 350,
     borderRadius: 10,
-  }
+  },
 });

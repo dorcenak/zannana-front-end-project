@@ -51,7 +51,10 @@ const App = () => {
         >
           <Text style={styles.sidebarButtonText}>Settings</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.sidebarButtonSignIn}>
+        <TouchableOpacity
+          style={styles.sidebarButtonSignIn}
+          onPress={() => router.push("/login")} // Add navigation to Login.js
+        >
           <Text style={styles.sidebarButtonText}>Sign In</Text>
         </TouchableOpacity>
       </View>
@@ -64,7 +67,10 @@ const App = () => {
             Play fun tabletop games with your friends and meet new people.
             Obtain new games and share yours with others!
           </Text>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => router.push("/login")} // Add navigation to Login.js
+          >
             <Text style={styles.buttonText}>LOGIN</Text>
           </TouchableOpacity>
         </View>
